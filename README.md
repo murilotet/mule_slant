@@ -41,13 +41,17 @@ Now we can build this project, and below we show three separate ways to do so.
 
 #### Building Commands
 
+On Unix-based operating systems, buiding is performed via the following commands:
+
 ```bash
 ❯ mkdir build
 ❯ cd build
 ❯ cmake ..
 ❯ make && make install
-❯ cd ..
+❯ cd ../bin
 ```
+
+On Windows, the CMake GUI can be used to build the executables. Some [TUTORIALS](https://preshing.com/20170511/how-to-build-a-cmake-based-project) can be found on the web.
 
 ### Running the CLI Executables
 
