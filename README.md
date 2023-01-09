@@ -27,7 +27,7 @@ First we need to check out the git repo:
 ```bash
 ❯ mkdir ~/workspace
 ❯ cd ~/workspace
-❯ git clone https://github.com/kigster/cmake-project-template my-project
+❯ git clone git@github.com:gutolive/mule-slant.git my-project
 ❯ cd my-project
 ```
 
