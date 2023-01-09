@@ -2,9 +2,7 @@
 
 ### Proposed Slanted 4D-Transform mode
 
-
-This project 
-Divider is a minimal project that's kept deliberately very small. When you build it using CMake/make (see below) it generates:
+ When you build it using CMake/make (see below) it generates:
 
  1. **A Slanted 4D-TM encoder command-line executable: `bin/encoder`**
  2. **A Slanted 4D-TM decoder command-line executable: `bin/decoder`**
