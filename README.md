@@ -61,9 +61,9 @@ The encoder and decoder executables must be executed passing the path od conf fi
 Example:
 
 ```bash
-❯ bin/encoder examples/BIKES/mule_slant_BIKES_lambda2048_encode.conf
+❯ bin/encoder -cf examples/BIKES/mule_slant_BIKES_lambda2048_encode.conf
 
-❯ bin/decoder examples/BIKES/mule_slant_BIKES_lambda2048_decode.conf
+❯ bin/decoder -cf examples/BIKES/mule_slant_BIKES_lambda2048_decode.conf
 
 ```
 
