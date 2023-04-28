@@ -67,54 +67,54 @@ Example:
 
 ```
 ### parameters in the encoder's configuration file
-
--lf <string>  : path to input light field directory
--o <string> : path to output compressed file
--nv <integer value> : number ov vertical views
--nh <integer value> : number ov horizontal views
--off_h <integer value> : first horizontal view index
--off_v <integer value> : first vertical view index
-
--lambda <float value> : Lagrange multiplier that controls the operation point. Increasing lambda reduces the rate while increasing the distortion
--u <integer value> : maximum transform length at u coordinate
--v <integer value> : maximum transform length at u coordinate
--s <integer value> : maximum transform length at u coordinate
--t <integer value> : maximum transform length at u coordinate
--min_u <integer value> : minimum transform length at u coordinate
--min_v <integer value> : minimum transform length at v coordinate
--min_s <integer value> : minimum transform length at s coordinate
--min_t <integer value> : minimum transform length at s coordinate
--t_scale <float value> : gain of the DCT transform applied at direction t (defaults to 1.0)
--s_scale <float value> : gain of the DCT transform applied at direction s (defaults to 1.0)
--v_scale <float value> : gain of the DCT transform applied at direction v (defaults to 1.0)
--u_scale <float value> : gain of the DCT transform applied at direction u (defaults to 1.0)
- 
--max_slant <integer value> : search range for the optimum slant is [-max_slant, max_slant]
--min_slant_block_u <integer value> : blocks with less than this size in the u coordinate will not be slanted 
--min_slant_block_v <integer value> : blocks with less than this size in the v coordinate will not be slanted 
- 
--lenslet13x13 : to be used when the light field was captured with a lenslet camera
- 
- Any one of these commands in the configuration file can be overriden by placing them in command line when invoking the encoder 
- 
- ### parameters in the decoder's configuration file
-
--lf <string>  : path to the output reconstructed light field directory
--i <string> : path to the input compressed file
--nv <integer value> : number ov vertical views
--nh <integer value> : number ov horizontal views
--off_h <integer value> : first horizontal view index
--off_v <integer value> : first vertical view index
-
--t_scale <float value> : gain of the DCT transform applied at direction t (must be set as the inverse of the value used when encoding)
--s_scale <float value> : gain of the DCT transform applied at direction s (must be set as the inverse of the value used when encoding)
--v_scale <float value> : gain of the DCT transform applied at direction v (must be set as the inverse of the value used when encoding)
--u_scale <float value> : gain of the DCT transform applied at direction u (must be set as the inverse of the value used when encoding)
- 
--lenslet13x13 : to be used when the light field was captured with a lenslet camera
- 
- Any one of these commands in the configuration file can be overriden by placing them in command line when invoking the encoder 
-
+  
+-lf <string>  : path to input light field directory  
+-o <string> : path to output compressed file  
+-nv <integer value> : number ov vertical views  
+-nh <integer value> : number ov horizontal views  
+-off_h <integer value> : first horizontal view index  
+-off_v <integer value> : first vertical view index  
+  
+-lambda <float value> : Lagrange multiplier that controls the operation point. Increasing lambda reduces the rate while increasing the distortion  
+-u <integer value> : maximum transform length at u coordinate  
+-v <integer value> : maximum transform length at u coordinate  
+-s <integer value> : maximum transform length at u coordinate  
+-t <integer value> : maximum transform length at u coordinate  
+-min_u <integer value> : minimum transform length at u coordinate  
+-min_v <integer value> : minimum transform length at v coordinate  
+-min_s <integer value> : minimum transform length at s coordinate  
+-min_t <integer value> : minimum transform length at s coordinate  
+-t_scale <float value> : gain of the DCT transform applied at direction t (defaults to 1.0)  
+-s_scale <float value> : gain of the DCT transform applied at direction s (defaults to 1.0)  
+-v_scale <float value> : gain of the DCT transform applied at direction v (defaults to 1.0)  
+-u_scale <float value> : gain of the DCT transform applied at direction u (defaults to 1.0)  
+   
+-max_slant <integer value> : search range for the optimum slant is [-max_slant, max_slant]  
+-min_slant_block_u <integer value> : blocks with less than this size in the u coordinate will not be slanted   
+-min_slant_block_v <integer value> : blocks with less than this size in the v coordinate will not be slanted   
+   
+-lenslet13x13 : to be used when the light field was captured with a lenslet camera  
+   
+ Any one of these commands in the configuration file can be overriden by placing them in command line when invoking the encoder  
+   
+ ### parameters in the decoder's configuration file  
+  
+-lf <string>  : path to the output reconstructed light field directory  
+-i <string> : path to the input compressed file  
+-nv <integer value> : number ov vertical views  
+-nh <integer value> : number ov horizontal views  
+-off_h <integer value> : first horizontal view index  
+-off_v <integer value> : first vertical view index  
+  
+-t_scale <float value> : gain of the DCT transform applied at direction t (must be set as the inverse of the value used when encoding)  
+-s_scale <float value> : gain of the DCT transform applied at direction s (must be set as the inverse of the value used when encoding)  
+-v_scale <float value> : gain of the DCT transform applied at direction v (must be set as the inverse of the value used when encoding)  
+-u_scale <float value> : gain of the DCT transform applied at direction u (must be set as the inverse of the value used when encoding)  
+   
+-lenslet13x13 : to be used when the light field was captured with a lenslet camera  
+   
+ Any one of these commands in the configuration file can be overriden by placing them in command line when invoking the encoder   
+  
 
 ### License
 
