@@ -120,8 +120,9 @@ void EncoderParameters :: ReadConfigurationFile(char *parametersFileName) {
         if(strcmp(command, "-disp_file_pgm") == 0) fscanf(parametersFilepointer, "%s", disparityFileNamePGM);
         if(strcmp(command, "-slant_u_scale") == 0) fscanf(parametersFilepointer, "%f", &slantScaleU);
         if(strcmp(command, "-slant_v_scale") == 0) fscanf(parametersFilepointer, "%f", &slantScaleV);
-        if(strcmp(command, "-disp_gain") == 0) fscanf(parametersFilepointer, "%f", &inverseDepthMapGain);
+        if(strcmp(command, "-disp_gain") == 0) fscanf(parametersFilepointer, "%lf", &inverseDepthMapGain);
         if(strcmp(command, "-disp_0") == 0) fscanf(parametersFilepointer, "%f", &inverseDepthMapZero);
+        if(strcmp(command, "-map_search_range") == 0) fscanf(parametersFilepointer, "%d", &mapAssistedSearchRange);
         fscanf(parametersFilepointer, "%s", command);
     }
 }
